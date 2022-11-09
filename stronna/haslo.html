@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="Stylesheet" href="styl.css"/>
+<meta charset="UTF-8"/>
+<title>
+Miernik jakości hasła
+</title>
+</head>
+<body>
+<div id="baner">
+<h1><a href="index.html">Sprawdź swoje hasło</a></h1>
+</div>
+<div id="lewy">
+<h2>Wybierz</h2>
+<ol>
+<li><a href="haslo.html">Sprawdź hasło</a></li>
+<li><a href="zasady.html">Zasady tworzenia hasła</a></li>
+</ol>
+</div>
+<div id="prawy">
+<form>
+<label><p>Twoje hasło:</p><input type="text" id="1"/></label>
+<input type="button" value="wyslij" onClick="haslo()"/>
+</form>
+<p id="wynik"></p>
+<script>
+function haslo(){
+	let a = Number(document.getElementById("1").value.length);
+	if(a>=7){
+	document.getElementById("wynik").innerHTML="dobre";
+	}
+	else if(a>4 && a<=6){
+	document.getElementById("wynik").innerHTML="srednie";
+	}
+	else{
+	document.getElementById("wynik").innerHTML="slabe";
+	}
+}
+</script>
+</div>
+<div id="stopka">
+<h3>Miernik jakości hasła</h3><br>
+<p>Strone opracował: 00000000000 </p>
+</div>
+</body>
+</html>

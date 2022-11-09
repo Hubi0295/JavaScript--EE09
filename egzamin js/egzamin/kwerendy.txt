@@ -1,0 +1,3 @@
+1.CREATE USER 'Agnieszka'@'localhost' IDENTIFIED BY 'haslo4';
+2.SELECT AVG(rocznik) from samochody where marka = "opel";
+3.ALTER TABLE KLASA drop column CENA;

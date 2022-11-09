@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+</head>
+<body>
+Rodzaj paliwa 1-benzyna, 2 ON<br>
+<form>
+<input type="number" id="rodzaj"><br>
+Ile litrów<br>
+<input type="number" id="ilosc">
+<input type="button" value="Oblicz" onClick="buton()"/>
+</form>
+<p id="pedau"></p>
+<script>
+function buton(){
+let rodzaj=document.getElementById('rodzaj').value;
+let ilosc=document.getElementById('ilosc').value;
+let k = 0;
+if (rodzaj==1){
+k=ilosc*4;
+}
+else if (rodzaj==2){
+k=ilosc*3.5;
+}
+else{
+k=0;
+}
+
+document.getElementById("pedau").innerHTML="Cena wynosi: "+k;
+alert(k);
+prompt(k);
+}
+</script>
+</body>
+</html>

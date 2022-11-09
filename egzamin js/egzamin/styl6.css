@@ -1,0 +1,59 @@
+html {
+    font-family: Georgia;
+}
+#lewy {
+    background-color: Maroon;
+    color: white;
+    height: 600px;
+    width: 30%;
+    float: left
+}
+#prawy {
+
+    background-color: maroon;
+    color: white;
+    height: 600px;
+    width: 70%;
+    float: left;
+    overflow: auto;
+}
+#stopka {
+
+    background-color: dimgray;
+    color: white;
+
+}
+p{
+    padding:10px
+}
+img {
+
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    float: left;
+
+}
+.button {
+
+    background-color: indigo;
+
+}
+#prawy p{
+    padding:10px;
+    clear:both;
+}
+#prawy ul {
+    overflow: auto;
+}
+.przycisk {
+
+    background-color: indigo;
+}
+.przycisk2 {
+    background-color: steelblue;
+}
+.przycisk3 {
+    background-color: olive;
+}

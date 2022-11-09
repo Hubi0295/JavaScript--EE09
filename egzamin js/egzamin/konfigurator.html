@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>Style w JavaScript</title>
+    <link rel="stylesheet" href="styl6.css">
+<script>
+
+function indigo(){
+
+    document.getElementById("prawy").style.backgroundColor="Indigo";
+
+}
+function steel(){
+
+document.getElementById("prawy").style.backgroundColor="steelblue";
+
+}
+function olive(){
+
+document.getElementById("prawy").style.backgroundColor="olive";
+
+}
+function rozmiar(){
+
+document.getElementById("prawy").style.fontSize=document.getElementById("tekst").value;
+
+}
+function check(){
+
+    if(document.getElementById("wybor2").checked){
+    document.getElementById("zdj").style.border = "1px solid white";
+    }
+    else {
+
+        document.getElementById("zdj").style.border = "none";
+
+    }
+    }
+function lista(){
+
+document.getElementById("prawy").style.color = document.getElementById("wybor").value;
+
+}
+function radio(){
+
+    if(document.getElementById('punktor1').checked) {
+
+        document.getElementById("lista").style.listStyle = "disc";
+    }
+    else if(document.getElementById('punktor2').checked) {
+        document.getElementById("lista").style.listStyle = "square";
+    }
+    else {
+        document.getElementById("lista").style.listStyle = "circle";
+    }
+
+}
+</script>
+</head>
+
+<body>
+
+<div id="lewy">
+
+    <h1>Konfigurator stylu</h1>
+    <p>Podaj kolor tła<br>
+    <input type="button" id="button" value="Indigo" class="przycisk" onclick="indigo()">
+    <input type="button" id="steel" value="SteelBlue" class="przycisk2" onclick="steel()">
+    <input type="button" id="oli" value="Olive" class="przycisk3" onclick="olive()">
+    </p>
+    <p>Podaj kolor czcionki
+    <select id="wybor" onchange="lista()">
+    <option value="white">White</option>
+    <option value="tan">Tan</option>
+    <option value="Bisque">Bisque</option>
+    <option value="Plum">Plum</option>
+    </select> 
+    </p>
+    <p>Podaj rozmiar czcionki w procentach np. 200%: <br>
+        <input type="text" value="100%" id="tekst" onblur="rozmiar()"> </p>
+    <p>Czy rysunek ma mieć ramkę? <br>
+        <input type="checkbox" id="wybor2" checked onchange="check()">
+
+            Rysuj ramke
+
+
+        </checkbox>
+    </p>
+    <p id="koks" onselect="radio">
+        Jaki jest typ punktora listy? <br>
+        Dysk<input type="radio" name="punktor" id="punktor1" checked onchange="radio()"><br>
+        Kwadrat<input type="radio" name="punktor" id="punktor2" onchange="radio()"><br>
+        Okrag<input type="radio" name="punktor" id="punktor3" onchange="radio()">
+        <option></option>
+        
+    </p>
+
+</div>
+<div id="prawy"> <img src="gibraltar.jpg" alt="półwysep Gibraltar" id='zdj'> 
+
+    <ul id="lista">
+
+<li>Element1</li>
+<li>Element2</li>
+<li>Element3</li>
+
+</ul>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div id="stopka">
+
+Autor: 00000000000
+
+</div>
+
+</body>
+
+
+</html>

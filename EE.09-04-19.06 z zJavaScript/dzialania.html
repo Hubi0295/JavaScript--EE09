@@ -1,0 +1,80 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="Stylesheet" type="text/css" href="styl.css"/>
+<title>
+Działania matematyczne
+</title>
+</head>
+<body>
+<div id="baner1">
+<img src="logo.jpg" alt="matematyka"/>
+</div>
+<div id="baner2">
+<h1>Pomocnik Matematyczny</h1>
+</div>
+<div id="baner3">
+<a href="dzialania.html"><h4>Działania</h4></a>
+</div>
+<div id="baner4">
+<a href="mnozenie.html"><h4>Tabliczka mnożenia</a>
+</div>
+<div id="lewy">
+<h3>Proste działania</h3>
+<form>
+<label>liczba A: <input type="number" id="10"/></label><br>
+<label>liczba B: <input type="number" id="20"/></label><br>
+<label><input type="button" value="+" onClick="dodaj()"/></label><br>
+<label><input type="button" value="-" onClick="odejmij()"/></label><br>
+<label><input type="button" value="*"  onClick="pomnoz()"/></label><br>
+<label><input type="button" value="/" onClick="podziel()"/></label><br>
+<label><input type="button" value="A^B" onClick="zpoteguj()"/></label><br>
+</form>
+<script>
+ function dodaj(){
+	let a= Number(document.getElementById("10").value);
+	let b= Number(document.getElementById("20").value);
+	let c= a+b;
+	document.getElementById("wynik").innerHTML= "Wynik: "+c;
+ }
+  function odejmij(){
+	let a= document.getElementById("10").value;
+	let b= document.getElementById("20").value;
+	let c= a-b;
+	document.getElementById("wynik").innerHTML= "Wynik: "+c;
+ }
+  function pomnoz(){
+	let a= document.getElementById("10").value;
+	let b= document.getElementById("20").value;
+	let c= a*b;
+	document.getElementById("wynik").innerHTML= "Wynik: "+c;
+ }
+  function podziel(){
+	let a= document.getElementById("10").value;
+	let b= document.getElementById("20").value;
+	let c= a/b;
+	document.getElementById("wynik").innerHTML= "Wynik: "+c;
+ }
+  function zpoteguj(){
+	let a= document.getElementById("10").value;
+	let b= document.getElementById("20").value;
+	let c= Math.pow(a,b);
+	document.getElementById("wynik").innerHTML= "Wynik: "+c;
+ }
+</script>
+<p id="wynik"></p>
+</div>
+<div id="prawy">
+<ul>
+<li>dodawanie</li>
+<li>odejmowanie</li>
+<li>mnożenie</li>
+<li>dzielenie</li>
+<li>potęgowanie</li>
+</ul>
+</div>
+<div id="stopka">
+<p>Autor: 00000000000</p>
+</div>
+</body>
+</html>

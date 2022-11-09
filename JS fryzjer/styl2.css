@@ -1,0 +1,55 @@
+*{
+font-family: Helevetica;
+}
+#lewy1{
+	height: 400px;
+	width: 70%;
+	background-color: Snow;
+	text-align: center;
+	float: left;
+	
+}
+#lewy2{
+	height: 400px;
+	width: 70%;
+	background-color: Snow;
+	font-size: 150%;
+	float: left;
+}
+#prawy1{
+	height: 150px;
+	width: 30%;
+	background-color: SteelBlue;
+	color: white;
+	text-align: center;
+	float:right;
+}
+#prawy2{
+	height: 350px;
+	width: 30%;
+	background-color: SteelBlue;
+	color: white;
+	float:right;
+}
+#prawy3{
+	height: 300px;
+	width: 30%;
+	color: white;
+	text-align: center;
+	float:right;
+}
+#stopka{
+	background-color: SteelBlue;
+	color: white;
+	clear:both;
+}
+h2{
+	font-size: 250%;
+}
+img{
+	padding: 4px;
+}
+img:hover{
+	padding: 3px;
+	border: 1px solid StelBlue;
+}

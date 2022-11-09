@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="styl2.css"/>
+<title>
+Usługi fryzjerskie
+</title>
+</head>
+<body>
+<div id="lewy1">
+<a href="index.html"><h1>SALON FRYZJERSKI</h1></a>
+<img src="obraz2.jpg" alt="Czesanie"/>
+</div>
+<div id="prawy1">
+<h2>Menu</h2>
+</div>
+<div id="prawy2">
+<ol>
+<a href="fryzura.html"><li>Strzyżenie</li></a>
+<ul>
+<li>krótkie</li>
+<li>średnie</li>
+<li>półdługie</li>
+<li>długie</li>
+</ul>
+<li>Czesanie</li>
+<li>Koloryzacja</li>
+</ol>
+</div>
+<div id="lewy2">
+<form>
+<h3>Dziś promocja na strzyżenie włosów</h3>
+Krotkie<input type="radio" id="k" name="wspolne"><br>
+Średnie<input type="radio" id="s"  name="wspolne"><br>
+Półdlugie<input type="radio" id="p"  name="wspolne"><br>
+Długie<input type="radio" id="d"  name="wspolne"><br>
+<input type="button" onClick="buton()" value="odkryj promocje">
+<p id="cena"></p>
+<script>
+function buton(){
+let c=0;
+if(document.getElementById('k').checked){
+c=25;
+}
+if(document.getElementById('s').checked){
+c=30;
+}
+if(document.getElementById('p').checked){
+c=40;
+}
+if(document.getElementById('d').checked){
+c=50;
+}
+document.getElementById('cena').innerHTML="Cena strzyżenia: "+c;
+}
+</script>
+</div>
+<div id="prawy3">
+<img src="obraz1.jpg" alt="Fryzura.html"/>
+</div>
+<div id="stopka">
+<p>Autor: 00000000000</p>
+</div>
+</body>
+</html>

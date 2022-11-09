@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>malarz</title>
+<link rel="stylesheet" href="styl.css"/>
+</head>
+<body>
+<div id="baner">
+<a href="index.html"><h1>Koszt farby</h1></a>
+</div>
+<div id="lewy">
+<h3>Mieszamy czy wyceniamy?</h3>
+<a href="mieszamy.html">Mieszamy</a></br>
+<a href="cena.html">Wyceniamy</a>
+</div>
+<div id="prawy">
+<form>
+<label>R: <input type="number" id="1"/></label></br>
+<label>G: <input type="number" id="2"/></label></br>
+<label>B: <input type="number" id="3"/></label></br>
+<input type="button" value="wyslij" onClick="W()"/>
+</form>
+<p id="wynik"></p>
+<script>
+	function W(){
+		 let a = Number(document.getElementById("1").value);
+		 let b = Number(document.getElementById("2").value);
+		 let c = Number(document.getElementById("3").value);
+		 if(Number.isInteger(a) AND Number.isInteger(b) AND Number.isInteger(c)){
+		 document.addEventListener(backgroundColor: RGB(+a+","+b+","+c));
+		}
+		else{
+		 document.getElementById("wynik").innerHTML="Zły typ danych";		
+		}
+	 }
+</script>
+</div>
+<div id="stopka">
+MALARZ</br>
+Strone opracował: 00000000000
+</div>
+</body>
+</html>

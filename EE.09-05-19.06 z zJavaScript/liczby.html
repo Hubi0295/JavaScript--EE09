@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>
+ciągi liczbowe
+</title>
+<link rel="Stylesheet" type="text/css" href="styl2.css"
+</head>
+<body>
+<div id="baner1">
+<h2>Poznaj ciągi liczbowe</h2>
+</div>
+<div id="baner2">
+<a href="liczby.html"><h5>Ciągi arytmetyczne</h5></a>
+</div>
+<div id="baner3">
+<a href="fib.html"><h5>Ciągi fibonacciego</h5></a>
+</div>
+<div id="baner4">
+<img src="obraz1.png" alt="Fibonacci"/>
+</div>
+<div id="lewy">
+<ol>
+<li>Ciągi arytmetyczne</li>
+<li>Ciągi geometryczne</li>
+<li>Ciągi fibonacciego</li>
+</div>
+<div id="prawy">
+<h2>Generowanie ciągu arytmetycznego</h2>
+<form>
+<label>Pierwszy wyraz A1 <input type="Number" id="1"/></label><br>
+<label>Różnica ciągu r <input type="Number" id="2"/></label><br>
+<label>liczba wyrazów w ciągu n <input type="Number" id="3"/></label><br>
+<label>Generuj ciąg <input type="button" id="4" value="GENERUJJJ" onClick="generuj()"/></label>
+</form>
+<p id="wynik"></p>
+<script>
+	function generuj(){
+	let a = Number(document.getElementById("1").value);
+	let b = Number(document.getElementById("2").value);
+	let c = Number(document.getElementById("3").value);
+	const tablica = [];
+	for(i=0; i<c; i++){
+	tablica.push(a);
+	a= a+=b;
+	}
+	document.getElementById("wynik").innerHTML=tablica;
+	}
+</script>
+</div>
+<div id="stopka">
+<p>Autor: 00000000000</p>
+</div>
+</body>
+</html>

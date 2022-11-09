@@ -1,0 +1,41 @@
+body{
+	font-family: Arial;
+}
+#lewy, #prawy{
+	background-color: RGB(255,127,80);
+	color: white;
+	width: 50%;
+	height: 410px;
+}
+#prawy{
+	float: right;
+}
+#lewy{
+	float: left;
+}
+#baner, #glowny{
+	background-color: RGB(220,220,220);
+	padding: 20px;
+	text-align: center;
+}
+#lewastopka, #prawastopka{
+	background-color: RGB(255, 127, 80);
+	color: white;
+	width: 50%;
+	height: 100px;
+}
+#prawastopka{
+	float: right;
+}
+#lewastopka{
+	float: left;
+}
+table, td{
+	border: solid 1px;
+	color: RGB(255,127,80);
+	padding: 10px;
+	text-align: center;
+}
+a{
+	color: white;
+}

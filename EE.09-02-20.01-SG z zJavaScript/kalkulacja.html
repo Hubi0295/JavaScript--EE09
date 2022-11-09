@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Nasza Stacja paliw</title>
+<link rel="Stylesheet" href="styl4.css"/>
+</head>
+<body>
+<div id="baner">
+<h2>Witamy na stacji paliw!</h2>
+</div>
+<div id="lewy">
+<a href="index.html"><img src="home.png"/></a>
+<a href="kalkulacja.html"><img src="znak.png"/></a>
+</div>
+<div id="prawy">
+<img src="samochod.png" alt="grafika: samochód"/>
+</div>
+<div id="glowny">
+<h2>Oblicz ile litrów muszisz zatankować</h2>
+<form>
+<label>dystans do przejechania w km</br>
+<input type="number" id="1"/></br>
+</label>
+<label>spalanie w samochodzie w l/100km</br>
+<input type="number" id="2"/></br>
+</label>
+<input type="button" value="OBLICZ" onClick="wyslij()"/>
+<p id="3"></p>
+</form>
+<script>
+function wyslij(){
+let a = Number(document.getElementById("1").value);
+let b = Number(document.getElementById("2").value);
+let c = (a/100)*b;
+document.getElementById("3").innerHTML="Ilość potrzebnego paliwa: "+c;
+}
+</script>
+</div>
+<div id="lewastopka">
+<p>Strone opracował: PESEL</p>
+</div>
+<div id="prawastopka">
+<a href="kwerendy.txt">Tu pobierzesz zapytania</a>
+</div>
+</body>
+</html>
